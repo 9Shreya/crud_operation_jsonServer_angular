@@ -1,0 +1,11 @@
+section {
+  height: 800px;
+  margin-left: 225px;
+  margin-top: -500px;
+  border: solid;
+  width: 900px;
+}
+aside {
+  height: 500px;
+  width: 200px;
+}

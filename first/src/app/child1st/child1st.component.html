@@ -1,0 +1,13 @@
+<p>child1st works!</p>
+<h2>this shows data present in json file</h2>
+<br /><br />
+{{ data | json }}<br />
+<hr />
+
+<div *ngFor="let d of data">
+  <span>{{ d | json }}</span>
+</div>
+<br /><br /><br />
+the data above line shows the data in json format but the data below line show
+the itration we did on this line as the object is itarable
+<br /><br /><br />

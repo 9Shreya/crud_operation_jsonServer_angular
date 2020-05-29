@@ -1,0 +1,50 @@
+<p>creat-with-nwithout-rfreshing works!</p>
+<body>
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <div class="form-group">
+          Name
+          <input
+            type="text"
+            name="name"
+            id=""
+            class="form-control"
+            [(ngModel)]="nam2"
+          />
+        </div>
+
+        <div class="form-group">
+          Phone
+          <input
+            type="text"
+            name="phon1"
+            id=""
+            class="form-control"
+            [(ngModel)]="phno2"
+          />
+        </div>
+        <div class="form-group">
+          Email
+          <input
+            type="text"
+            name="email1"
+            id=""
+            class="form-control"
+            [(ngModel)]="email2"
+          />
+        </div>
+        <button class="btn btn-success">Create</button>
+      </form>
+      {{ data | json }}
+    </div>
+    <div class="col-md-6">
+      <div *ngFor="let f of data">
+        <button style="background-color: red;" (click)="withoutRefDelet(f)">
+          <input type="text" placeholder="{{ f.name }}   {{ f.id }}" />
+          deleteWithoutRefresh
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
